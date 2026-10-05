@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Advanced CSS & JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Advanced CSS & JavaScript</h1>
+</header>
+
+<!-- Responsive Section -->
+<section class="container">
+    <div class="card">
+        <h2>Responsive Design</h2>
+        <p>This page changes layout according to screen size.</p>
+    </div>
+
+    <div class="card">
+        <h2>Interactive Quiz</h2>
+
+        <h3 id="question">Question</h3>
+
+        <button class="option" onclick="checkAnswer(this)">Option 1</button>
+        <button class="option" onclick="checkAnswer(this)">Option 2</button>
+        <button class="option" onclick="checkAnswer(this)">Option 3</button>
+        <button class="option" onclick="checkAnswer(this)">Option 4</button>
+
+        <p id="result"></p>
+
+        <button onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <div class="card">
+        <h2>Random Joke API</h2>
+
+        <p id="joke">Click the button to load a joke.</p>
+
+        <button onclick="getJoke()">Get Joke</button>
+    </div>
+</section>
+
+<script src="index.js"></script>
+
+</body>
+</html>
